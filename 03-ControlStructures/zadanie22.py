@@ -1,19 +1,9 @@
-from random import randrange
-x=30
-podzielnaprzez3=x%3==0
-podzielnaprzez5=x%5==0
-podzielnaprzez3i5=podzielnaprzez3 and podzielnaprzez5
-for x in x:
-    if podzielnaprzez3:
-        print(f"THREE") 
-    if podzielnaprzez5:
-        print(f"FIVE")
-    if podzielnaprzez3i5:
-        print(f"BINGO")  
-#if podzielnaprzez3:
-    #print(f"THREE")
-#if podzielnaprzez5:
-    #print("FIVE")
-#if podzielnaprzez3 and podzielnaprzez3i5:
-    #print("BINGO")
-
+for x in range(1,31):
+    if x%3==0 and x%5==0:
+        print('BINGO')
+    elif x%5==0:
+        print('Five')
+    elif x%3==0:
+        print('THREE')
+    else:
+        print(x)
